@@ -1,0 +1,472 @@
+Error in getting similarity for ('couple', 'photos'): <Response [500]>
+Error in getting similarity for ('couple', 'money'): <Response [500]>
+Error in getting similarity for ('sprint', 'several'): <Response [500]>
+Error in getting similarity for ('sprint', 'support'): <Response [500]>
+Error in getting similarity for ('bluetooth', 'use'): <Response [500]>
+Error in getting similarity for ('web', 'smooth'): <Response [500]>
+Error in getting similarity for ('weight', 'performance'): <Response [500]>
+Error in getting similarity for ('put', 'first'): <Response [500]>
+Error in getting similarity for ('put', 'life'): <Response [500]>
+Error in getting similarity for ('put', 'recommend'): <Response [500]>
+Error in getting similarity for ('put', 'overall'): <Response [500]>
+Error in getting similarity for ('put', 'anyone'): <Response [500]>
+Error in getting similarity for ('put', 'pretty'): <Response [500]>
+Error in getting similarity for ('put', 'used'): <Response [500]>
+Error in getting similarity for ('built', 'display'): <Response [500]>
+Error in getting similarity for ('play', 'drop'): <Response [500]>
+Error in getting similarity for ('job', 'features'): <Response [500]>
+Error in getting similarity for ('job', 'samsung'): <Response [500]>
+Error in getting similarity for ('job', 'performance'): <Response [500]>
+Error in getting similarity for ('job', 'disappointed'): <Response [500]>
+Error in getting similarity for ('job', 'version'): <Response [500]>
+Error in getting similarity for ('job', 'smaller'): <Response [500]>
+Error in getting similarity for ('job', 'spend'): <Response [500]>
+Error in getting similarity for ('turn', 'helpful'): <Response [500]>
+Error in getting similarity for ('went', 'get'): <Response [500]>
+Error in getting similarity for ('went', 'mind'): <Response [500]>
+Error in getting similarity for ('went', 'cant'): <Response [500]>
+Error in getting similarity for ('con', 'design'): <Response [500]>
+Error in getting similarity for ('memory', 'web'): <Response [500]>
+Error in getting similarity for ('memory', 'cameras'): <Response [500]>
+Error in getting similarity for ('memory', 'expected'): <Response [500]>
+Error in getting similarity for ('learn', 'say'): <Response [500]>
+Error in getting similarity for ('learn', 'display'): <Response [500]>
+Error in getting similarity for ('learn', 'pictures'): <Response [500]>
+Error in getting similarity for ('learn', 'gets'): <Response [500]>
+Error in getting similarity for ('learn', 'player'): <Response [500]>
+Error in getting similarity for ('dont', 'smartphone'): <Response [500]>
+Error in getting similarity for ('dont', 'little'): <Response [500]>
+Error in getting similarity for ('dont', 'market'): <Response [500]>
+Error in getting similarity for ('dont', 'years'): <Response [500]>
+Error in getting similarity for ('dont', 'compared'): <Response [500]>
+Error in getting similarity for ('least', 'galaxy'): <Response [500]>
+Error in getting similarity for ('least', 'phone'): <Response [500]>
+Error in getting similarity for ('including', 'update'): <Response [500]>
+Error in getting similarity for ('including', 'movies'): <Response [500]>
+Error in getting similarity for ('fit', 'galaxy'): <Response [500]>
+Error in getting similarity for ('fit', 'love'): <Response [500]>
+Error in getting similarity for ('fit', 'like'): <Response [500]>
+Error in getting similarity for ('fit', 'review'): <Response [500]>
+Error in getting similarity for ('picture', 'fine'): <Response [500]>
+Error in getting similarity for ('picture', 'added'): <Response [500]>
+Error in getting similarity for ('picture', 'google'): <Response [500]>
+Error in getting similarity for ('usually', 'memory'): <Response [500]>
+Error in getting similarity for ('switch', 'everything'): <Response [500]>
+Error in getting similarity for ('switch', 'music'): <Response [500]>
+Error in getting similarity for ('talk', 'weeks'): <Response [500]>
+Error in getting similarity for ('open', 'volume'): <Response [500]>
+Error in getting similarity for ('cannot', 'card'): <Response [500]>
+Error in getting similarity for ('review', 'decision'): <Response [500]>
+Error in getting similarity for ('review', 'e'): <Response [500]>
+Error in getting similarity for ('review', 'fine'): <Response [500]>
+Error in getting similarity for ('sync', 'allow'): <Response [500]>
+Error in getting similarity for ('sync', 'pleased'): <Response [500]>
+Error in getting similarity for ('tried', 'answer'): <Response [500]>
+Error in getting similarity for ('set', 'expected'): <Response [500]>
+Error in getting similarity for ('try', 'know'): <Response [500]>
+Error in getting similarity for ('try', 'pictures'): <Response [500]>
+Error in getting similarity for ('try', 'voice'): <Response [500]>
+Error in getting similarity for ('try', 'everyone'): <Response [500]>
+Error in getting similarity for ('let', 'sound'): <Response [500]>
+Error in getting similarity for ('let', 'button'): <Response [500]>
+Error in getting similarity for ('high', 'tell'): <Response [500]>
+Error in getting similarity for ('high', 'player'): <Response [500]>
+Error in getting similarity for ('buttons', 'touch'): <Response [500]>
+Error in getting similarity for ('buttons', 'card'): <Response [500]>
+Error in getting similarity for ('less', 'samsung'): <Response [500]>
+Error in getting similarity for ('functions', 'sync'): <Response [500]>
+Error in getting similarity for ('functions', 'technology'): <Response [500]>
+Error in getting similarity for ('tell', 'cameras'): <Response [500]>
+Error in getting similarity for ('tell', 'satisfied'): <Response [500]>
+Error in getting similarity for ('player', 'worth'): <Response [500]>
+Error in getting similarity for ('installed', 'great'): <Response [500]>
+Error in getting similarity for ('installed', 'use'): <Response [500]>
+Error in getting similarity for ('heavy', 'features'): <Response [500]>
+Error in getting similarity for ('fits', 'like'): <Response [500]>
+Error in getting similarity for ('multi', 'phones'): <Response [500]>
+Error in getting similarity for ('multi', 'update'): <Response [500]>
+Error in getting similarity for ('multi', 'getting'): <Response [500]>
+Error in getting similarity for ('end', 'worked'): <Response [500]>
+Traceback (most recent call last):
+  File "ABSA.py", line 120, in <module>
+    main()
+  File "ABSA.py", line 56, in main
+    G = np.array(get_G_semantic_matrix(frequent_words))    # vocab
+  File "/mnt/yuxian_laptop/ABSA/UMBC.py", line 27, in get_G_semantic_matrix
+    row.append(Parallel(n_jobs=10)(delayed(sss)(i, j) for j in data))
+  File "/usr/local/lib/python2.7/dist-packages/joblib/parallel.py", line 789, in __call__
+    self.retrieve()
+  File "/usr/local/lib/python2.7/dist-packages/joblib/parallel.py", line 740, in retrieve
+    raise exception
+joblib.my_exceptions.JoblibUnboundLocalError: JoblibUnboundLocalError
+___________________________________________________________________________
+Multiprocessing exception:
+...........................................................................
+/mnt/yuxian_laptop/ABSA/ABSA.py in <module>()
+    115     print 'F score', aspect_F_score
+    116 
+    117 
+    118 
+    119 if __name__ == '__main__':
+--> 120     main()
+    121 
+    122 
+
+...........................................................................
+/mnt/yuxian_laptop/ABSA/ABSA.py in main()
+     51     clusters = [[i] for i in frequent_words]
+     52 
+     53 
+     54     # get the semantic and statistical matrix
+     55     #'''
+---> 56     G = np.array(get_G_semantic_matrix(frequent_words))    # vocab
+        G = undefined
+        frequent_words = ['phone', 'great', 'love', 'samsung', 'screen', 'galaxy', 'features', 'battery', 'like', 'use', 'would', 'good', 'one', 'best', 'get', 'note', 'iphone', 'apps', 'first', 'life', ...]
+     57     G.dump(G_matrix_filename)
+     58     T = np.array(get_T_statistical_matrix(frequent_words, words, data))  # vocab
+     59     T.dump(T_matrix_filename)
+     60 
+
+...........................................................................
+/mnt/yuxian_laptop/ABSA/UMBC.py in get_G_semantic_matrix(data=['phone', 'great', 'love', 'samsung', 'screen', 'galaxy', 'features', 'battery', 'like', 'use', 'would', 'good', 'one', 'best', 'get', 'note', 'iphone', 'apps', 'first', 'life', ...])
+     22 
+     23 def get_G_semantic_matrix(data):
+     24     G = []
+     25     for i in data:
+     26         row=[]
+---> 27         row.append(Parallel(n_jobs=10)(delayed(sss)(i, j) for j in data))
+        row.append = <built-in method append of list object>
+        data = ['phone', 'great', 'love', 'samsung', 'screen', 'galaxy', 'features', 'battery', 'like', 'use', 'would', 'good', 'one', 'best', 'get', 'note', 'iphone', 'apps', 'first', 'life', ...]
+     28         # for j in data:
+     29         #    row.append(sss(i,j))
+     30         G.append(row)
+     31     return G
+
+...........................................................................
+/usr/local/lib/python2.7/dist-packages/joblib/parallel.py in __call__(self=Parallel(n_jobs=10), iterable=<generator object <genexpr>>)
+    784             if pre_dispatch == "all" or n_jobs == 1:
+    785                 # The iterable was consumed all at once by the above for loop.
+    786                 # No need to wait for async callbacks to trigger to
+    787                 # consumption.
+    788                 self._iterating = False
+--> 789             self.retrieve()
+        self.retrieve = <bound method Parallel.retrieve of Parallel(n_jobs=10)>
+    790             # Make sure that we get a last message telling us we are done
+    791             elapsed_time = time.time() - self._start_time
+    792             self._print('Done %3i out of %3i | elapsed: %s finished',
+    793                         (len(self._output), len(self._output),
+
+---------------------------------------------------------------------------
+Sub-process traceback:
+---------------------------------------------------------------------------
+UnboundLocalError                                  Wed Sep  6 15:56:41 2017
+PID: 3162                                    Python 2.7.12: /usr/bin/python
+...........................................................................
+/usr/local/lib/python2.7/dist-packages/joblib/parallel.py in __call__(self=<joblib.parallel.BatchedCalls object>)
+    126     def __init__(self, iterator_slice):
+    127         self.items = list(iterator_slice)
+    128         self._size = len(self.items)
+    129 
+    130     def __call__(self):
+--> 131         return [func(*args, **kwargs) for func, args, kwargs in self.items]
+        func = <function sss>
+        args = ('easier', 'went')
+        kwargs = {}
+        self.items = [(<function sss>, ('easier', 'went'), {})]
+    132 
+    133     def __len__(self):
+    134         return self._size
+    135 
+
+...........................................................................
+/mnt/yuxian_laptop/ABSA/UMBC.py in sss(s1='easier', s2='went', type='relation', corpus='webbase')
+     14         if isinf(float(response.text.strip())):
+     15             return 0.0
+     16         else:
+     17             return float(response.text.strip())
+     18     except:
+---> 19         print 'Error in getting similarity for %s: %s' % ((s1, s2), response)
+        s1 = 'easier'
+        s2 = 'went'
+        response = undefined
+     20         return 0.0
+     21 
+     22 
+     23 def get_G_semantic_matrix(data):
+
+UnboundLocalError: local variable 'response' referenced before assignment
+___________________________________________________________________________
+root@moscato-p3:/mnt/yuxian_laptop/ABSA# cd ../graph_of_words/
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# python bag_of_words_classification.py 
+champion products approves stock split champion products inc board directors approved two for stock split common shares for shareholders record april company board voted recommend shareholders annual meeting april increase authorized capital stock mln mln shares reuter 
+
+computer terminal systems cpml completes sale computer terminal systems inc completed sale shares common stock and warrants acquire additional mln shares sedio lugano switzerland for dlrs company warrants exercisable for years purchase price dlrs per share computer terminal sedio buy additional shares and increase total holdings pct computer terminal outstanding common stock circumstances involving change control company company conditions occur warrants exercisable price equal pct common stock market price time not exceed dlrs per share computer terminal sold technolgy rights dot matrix impact technology including future improvements woodco inc houston tex for dlrs continue exclusive worldwide licensee technology for woodco company moves part reorganization plan and pay current operation costs and ensure product delivery computer terminal makes computer generated labels forms tags and ticket printers and terminals reuter 
+
+cobanco inc cbco year net shr cts dlrs net assets mln mln deposits mln mln loans mln mln note qtr not year includes extraordinary gain tax carry forward dlrs cts per shr reuter 
+^CTraceback (most recent call last):
+  File "bag_of_words_classification.py", line 131, in <module>
+    main()
+  File "bag_of_words_classification.py", line 95, in main
+    train_lables, train_vectors, vectorizer = load_train_data(train_filename)
+  File "bag_of_words_classification.py", line 16, in load_train_data
+    raw_input()
+KeyboardInterrupt
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# ls
+bag_of_words_classification.py  classification_new.py  classification.py  graph_of_words.py  preprocess-g-span.py  subgraph-SVM.py  wlk.py
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# python bag_of_words_classification.py 
+/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+train and test set shapes (5485, 19367) (2189, 19367)
+train set counter Counter({2: 2840, 0: 1596, 1: 253, 7: 251, 5: 206, 4: 190, 6: 108, 3: 41})
+test set counter Counter({2: 1083, 0: 696, 1: 121, 5: 87, 4: 81, 7: 75, 6: 36, 3: 10})
+i have trained my classifier to perform sentiment analysis
+prediction counter Counter({2: 1089, 0: 699, 1: 120, 5: 87, 7: 79, 4: 74, 6: 32, 3: 9})
+i have a test set accuracy of:  0.971219735039
+             precision    recall  f1-score   support
+
+          0       0.97      0.98      0.97       696
+          1       0.95      0.94      0.95       121
+          2       0.99      0.99      0.99      1083
+          3       1.00      0.90      0.95        10
+          4       0.93      0.85      0.89        81
+          5       0.89      0.89      0.89        87
+          6       0.91      0.81      0.85        36
+          7       0.94      0.99      0.96        75
+
+avg / total       0.97      0.97      0.97      2189
+
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# ls
+bag_of_words_classification.py  classification_new.py  classification.py  graph_of_words.py  preprocess-g-span.py  subgraph-SVM.py  wlk.py
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# python bag_of_words_classification.py 
+earn	champion products approves stock split champion products inc board directors approved two for stock split common shares for shareholders record april company board voted recommend shareholders annual meeting april increase authorized capital stock mln mln shares reuter 
+
+champion products approves stock split champion products inc board directors approved two for stock split common shares for shareholders record april company board voted recommend shareholders annual meeting april increase authorized capital stock mln mln shares reuter 
+^CTraceback (most recent call last):
+  File "bag_of_words_classification.py", line 132, in <module>
+    main()
+  File "bag_of_words_classification.py", line 96, in main
+    train_lables, train_vectors, vectorizer = load_train_data(train_filename)
+  File "bag_of_words_classification.py", line 17, in load_train_data
+    raw_input()
+KeyboardInterrupt
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# ls
+bag_of_words_classification.py  classification_new.py  classification.py  graph_of_words.py  preprocess-g-span.py  subgraph-SVM.py  wlk.py
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# python bag_of_words_classification.py 
+Traceback (most recent call last):
+  File "bag_of_words_classification.py", line 132, in <module>
+    main()
+  File "bag_of_words_classification.py", line 96, in main
+    train_lables, train_vectors, vectorizer = load_train_data(train_filename)
+  File "bag_of_words_classification.py", line 60, in load_train_data
+    f = open(filename, 'rU')
+IOError: [Errno 2] No such file or directory: '../data/WebKB/webkb-train-stemmed.txt'
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# python bag_of_words_classification.py 
+Traceback (most recent call last):
+  File "bag_of_words_classification.py", line 132, in <module>
+    main()
+  File "bag_of_words_classification.py", line 96, in main
+    train_lables, train_vectors, vectorizer = load_train_data(train_filename)
+  File "bag_of_words_classification.py", line 60, in load_train_data
+    f = open(filename, 'rU')
+IOError: [Errno 2] No such file or directory: '../data/WebKB/webkb-train-stemmed.txt'
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# ls
+bag_of_words_classification.py  classification_new.py  classification.py  graph_of_words.py  preprocess-g-span.py  subgraph-SVM.py  wlk.py
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# python bag_of_words_classification.py 
+/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+train and test set shapes (2785, 503629) (1383, 503629)
+train set counter Counter({0: 1085, 2: 745, 1: 620, 3: 335})
+test set counter Counter({0: 540, 2: 371, 1: 306, 3: 166})
+i have trained my classifier to perform sentiment analysis
+prediction counter Counter({0: 529, 2: 380, 1: 313, 3: 161})
+i have a test set accuracy of:  0.925524222704
+             precision    recall  f1-score   support
+
+          0       0.95      0.93      0.94       540
+          1       0.96      0.98      0.97       306
+          2       0.89      0.91      0.90       371
+          3       0.88      0.86      0.87       166
+
+avg / total       0.93      0.93      0.93      1383
+
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# ls
+bag_of_words_classification.py  classification_new.py  classification.py  graph_of_words.py  preprocess-g-span.py  subgraph-SVM.py  wlk.py
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# python bag_of_words_classification.py 
+/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+train and test set shapes (2785, 7287) (1383, 7287)
+train set counter Counter({0: 1085, 2: 745, 1: 620, 3: 335})
+test set counter Counter({0: 540, 2: 371, 1: 306, 3: 166})
+i have trained my classifier to perform sentiment analysis
+prediction counter Counter({0: 530, 2: 379, 1: 311, 3: 163})
+i have a test set accuracy of:  0.916124367317
+             precision    recall  f1-score   support
+
+          0       0.94      0.92      0.93       540
+          1       0.95      0.97      0.96       306
+          2       0.88      0.90      0.89       371
+          3       0.86      0.84      0.85       166
+
+avg / total       0.92      0.92      0.92      1383
+
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# ls
+bag_of_words_classification.py  classification_new.py  classification.py  graph_of_words.py  preprocess-g-span.py  subgraph-SVM.py  wlk.py
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# python bag_of_words_classification.py 
+/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:429: DataConversionWarning: Data with input dtype int64 was converted to float64 by the normalize function.
+  warnings.warn(msg, _DataConversionWarning)
+train and test set shapes (2785, 7287) (1383, 7287)
+train set counter Counter({0: 1085, 2: 745, 1: 620, 3: 335})
+test set counter Counter({0: 540, 2: 371, 1: 306, 3: 166})
+i have trained my classifier to perform sentiment analysis
+prediction counter Counter({0: 509, 2: 379, 1: 308, 3: 187})
+i have a test set accuracy of:  0.913232104121
+             precision    recall  f1-score   support
+
+          0       0.94      0.89      0.92       540
+          1       0.96      0.96      0.96       306
+          2       0.89      0.91      0.90       371
+          3       0.81      0.92      0.86       166
+
+avg / total       0.92      0.91      0.91      1383
+
+root@moscato-p3:/mnt/yuxian_laptop/graph_of_words# cd ../ABSA/
+root@moscato-p3:/mnt/yuxian_laptop/ABSA# python ABSA.py
+gold_standard_aspects:  ['performance', 'speed', 'processor', 'storage', 'battery', 'connectivity', 'price', 'design', 'size', 'weight', 'ease of use', 'customization', 'quality', 'durability', 'freeze', 'call', 'feature', 'function', 'issue', 'multitasking', 'waterproof', 'screen', 'camera', 'software', 'update', 'operating system', 'sound', 'input', 'cover', 'command', 'support', 'calendar', 'clock', 'text', 'email', 'recognition', 'fingerprint', 'media player', 'gallery', 'gps', 'heart rate monitor', 'help info', 'port', 's beam', 'swype', 'touchwiz']
+***************
+Error in getting similarity for ('phone', 'phone'): <Response [500]>
+Error in getting similarity for ('phone', 'samsung'): <Response [500]>
+^CTraceback (most recent call last):
+  File "ABSA.py", line 120, in <module>
+    main()
+  File "ABSA.py", line 56, in main
+    G = np.array(get_G_semantic_matrix(frequent_words))    # vocab
+  File "/mnt/yuxian_laptop/ABSA/UMBC.py", line 27, in get_G_semantic_matrix
+    row.append(Parallel(n_jobs=20)(delayed(sss)(i, j) for j in data))
+  File "/usr/local/lib/python2.7/dist-packages/joblib/parallel.py", line 789, in __call__
+    self.retrieve()
+  File "/usr/local/lib/python2.7/dist-packages/joblib/parallel.py", line 699, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/usr/lib/python2.7/multiprocessing/pool.py", line 561, in get
+    self.wait(timeout)
+  File "/usr/lib/python2.7/multiprocessing/pool.py", line 556, in wait
+    self._cond.wait(timeout)
+  File "/usr/lib/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+KeyboardInterrupt
+root@moscato-p3:/mnt/yuxian_laptop/ABSA# python ABSA.py
+gold_standard_aspects:  ['performance', 'speed', 'processor', 'storage', 'battery', 'connectivity', 'price', 'design', 'size', 'weight', 'ease of use', 'customization', 'quality', 'durability', 'freeze', 'call', 'feature', 'function', 'issue', 'multitasking', 'waterproof', 'screen', 'camera', 'software', 'update', 'operating system', 'sound', 'input', 'cover', 'command', 'support', 'calendar', 'clock', 'text', 'email', 'recognition', 'fingerprint', 'media player', 'gallery', 'gps', 'heart rate monitor', 'help info', 'port', 's beam', 'swype', 'touchwiz']
+***************
+Error in getting similarity for ('features', 'version'): <Response [500]>
+Error in getting similarity for ('battery', 'power'): <Response [500]>
+Traceback (most recent call last):
+  File "ABSA.py", line 120, in <module>
+    main()
+  File "ABSA.py", line 56, in main
+    G = np.array(get_G_semantic_matrix(frequent_words))    # vocab
+  File "/mnt/yuxian_laptop/ABSA/UMBC.py", line 27, in get_G_semantic_matrix
+    row.append(Parallel(n_jobs=20)(delayed(sss)(i, j) for j in data))
+  File "/usr/local/lib/python2.7/dist-packages/joblib/parallel.py", line 789, in __call__
+    self.retrieve()
+  File "/usr/local/lib/python2.7/dist-packages/joblib/parallel.py", line 740, in retrieve
+    raise exception
+joblib.my_exceptions.JoblibUnboundLocalError: JoblibUnboundLocalError
+___________________________________________________________________________
+Multiprocessing exception:
+...........................................................................
+/mnt/yuxian_laptop/ABSA/ABSA.py in <module>()
+    115     print 'F score', aspect_F_score
+    116 
+    117 
+    118 
+    119 if __name__ == '__main__':
+--> 120     main()
+    121 
+    122 
+
+...........................................................................
+/mnt/yuxian_laptop/ABSA/ABSA.py in main()
+     51     clusters = [[i] for i in frequent_words]
+     52 
+     53 
+     54     # get the semantic and statistical matrix
+     55     #'''
+---> 56     G = np.array(get_G_semantic_matrix(frequent_words))    # vocab
+        G = undefined
+        frequent_words = ['phone', 'great', 'love', 'samsung', 'screen', 'galaxy', 'features', 'battery', 'like', 'use', 'would', 'good', 'one', 'best', 'get', 'note', 'iphone', 'apps', 'first', 'life', ...]
+     57     G.dump(G_matrix_filename)
+     58     T = np.array(get_T_statistical_matrix(frequent_words, words, data))  # vocab
+     59     T.dump(T_matrix_filename)
+     60 
+
+...........................................................................
+/mnt/yuxian_laptop/ABSA/UMBC.py in get_G_semantic_matrix(data=['phone', 'great', 'love', 'samsung', 'screen', 'galaxy', 'features', 'battery', 'like', 'use', 'would', 'good', 'one', 'best', 'get', 'note', 'iphone', 'apps', 'first', 'life', ...])
+     22 
+     23 def get_G_semantic_matrix(data):
+     24     G = []
+     25     for i in data:
+     26         row=[]
+---> 27         row.append(Parallel(n_jobs=20)(delayed(sss)(i, j) for j in data))
+        row.append = <built-in method append of list object>
+        data = ['phone', 'great', 'love', 'samsung', 'screen', 'galaxy', 'features', 'battery', 'like', 'use', 'would', 'good', 'one', 'best', 'get', 'note', 'iphone', 'apps', 'first', 'life', ...]
+     28         # for j in data:
+     29         #    row.append(sss(i,j))
+     30         G.append(row)
+     31     return G
+
+...........................................................................
+/usr/local/lib/python2.7/dist-packages/joblib/parallel.py in __call__(self=Parallel(n_jobs=20), iterable=<generator object <genexpr>>)
+    784             if pre_dispatch == "all" or n_jobs == 1:
+    785                 # The iterable was consumed all at once by the above for loop.
+    786                 # No need to wait for async callbacks to trigger to
+    787                 # consumption.
+    788                 self._iterating = False
+--> 789             self.retrieve()
+        self.retrieve = <bound method Parallel.retrieve of Parallel(n_jobs=20)>
+    790             # Make sure that we get a last message telling us we are done
+    791             elapsed_time = time.time() - self._start_time
+    792             self._print('Done %3i out of %3i | elapsed: %s finished',
+    793                         (len(self._output), len(self._output),
+
+---------------------------------------------------------------------------
+Sub-process traceback:
+---------------------------------------------------------------------------
+UnboundLocalError                                  Wed Sep  6 17:19:05 2017
+PID: 4042                                    Python 2.7.12: /usr/bin/python
+...........................................................................
+/usr/local/lib/python2.7/dist-packages/joblib/parallel.py in __call__(self=<joblib.parallel.BatchedCalls object>)
+    126     def __init__(self, iterator_slice):
+    127         self.items = list(iterator_slice)
+    128         self._size = len(self.items)
+    129 
+    130     def __call__(self):
+--> 131         return [func(*args, **kwargs) for func, args, kwargs in self.items]
+        func = <function sss>
+        args = ('best', 'cant')
+        kwargs = {}
+        self.items = [(<function sss>, ('best', 'cant'), {})]
+    132 
+    133     def __len__(self):
+    134         return self._size
+    135 
+
+...........................................................................
+/mnt/yuxian_laptop/ABSA/UMBC.py in sss(s1='best', s2='cant', type='relation', corpus='webbase')
+     14         if isinf(float(response.text.strip())):
+     15             return 0.0
+     16         else:
+     17             return float(response.text.strip())
+     18     except:
+---> 19         print 'Error in getting similarity for %s: %s' % ((s1, s2), response)
+        s1 = 'best'
+        s2 = 'cant'
+        response = undefined
+     20         return 0.0
+     21 
+     22 
+     23 def get_G_semantic_matrix(data):
+
+UnboundLocalError: local variable 'response' referenced before assignment
+___________________________________________________________________________
+root@moscato-p3:/mnt/yuxian_laptop/ABSA# ^C
+root@moscato-p3:/mnt/yuxian_laptop/ABSA# 
+
